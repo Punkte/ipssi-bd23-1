@@ -1,7 +1,5 @@
-import createElement from "../dom/createElement"
-
 export default function Card({ src, text }) {
-  const cardObject = {
+  return {
     tagName: 'div',
     children: [
       {
@@ -16,5 +14,4 @@ export default function Card({ src, text }) {
       },
     ]
   }
-  return createElement(cardObject)
 }
